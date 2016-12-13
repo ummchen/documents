@@ -1,6 +1,6 @@
 #Build Chromium OS
 
-##Install 64bit Ubuntu 14.04
+##Install 64bit Ubuntu 14.04/16.04
 ###Hardware Requirement
 * 200GB of free disk space
 
