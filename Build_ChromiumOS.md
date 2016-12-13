@@ -47,7 +47,7 @@ git config --global user.email "you@example.com"
 ```
 
 ###Gerrit credentials setup
-* Login https://chromium-review.googlesource.com/new-password
+* Login [https://chromium-review.googlesource.com/new-password](https://chromium-review.googlesource.com/new-password)
 * Select “only chromium.googlesource.com”
 * Copying this script and pasting it into a shell
 
@@ -67,7 +67,7 @@ cros_sdk
 ##Setup Build Target (First Time Only)
 ###Select Board
 ```
-export BOARD=auron_yuna
+export BOARD=x86-generic
 ./setup_board --board=${BOARD}
 ```
 * add "--force" for clobber previously set up
@@ -75,7 +75,7 @@ export BOARD=auron_yuna
 ###Set Kernel Source Tree
 ```
 emerge-$BOARD -pv virtual/linux-sources
-cros_workon --board=${BOARD} start sys-kernel/chromeos-kernel-3_XX
+cros_workon --board=${BOARD} start sys-kernel/chromeos-kernel-X_X
 ```
 
 ###Set the chronos user password
