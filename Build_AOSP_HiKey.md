@@ -102,8 +102,13 @@ cd hikey-linaro
 git checkout -b android-hikey-linaro-4.4 origin/android-hikey-linaro-4.4
 ```
 
-###Compile Kernel
+##Build Kernel Image
+###Build Kernel
 ```
+cd ~/android
+source build/envsetup.sh
+lunch hikey-userdebug
+cd ~/hikey-linaro
 make ARCH=arm64 hikey_defconfig
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-android- -j4
 ```
@@ -115,8 +120,8 @@ cp arch/arm64/boot/dts/hisilicon/hi6220-hikey.dtb ~/android/device/linaro/hikey-
 cp arch/arm64/boot/Image-dtb ~/android/device/linaro/hikey-kernel/
 ```
 
-##Build Kernel Image
-###Build Kernel
+##Build Boot Image
+###Build Image
 ```
 cd ~/android
 source build/envsetup.sh
